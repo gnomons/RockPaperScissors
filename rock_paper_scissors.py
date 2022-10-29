@@ -5,7 +5,7 @@ paper = "Paper"
 scissor = "Scissor"
 
 player_move = input("Choose [r]ock, [p]aper, [s]cissors: ")
-
+#here we create a player_move form later to a object
 if player_move == "r":
     player_move = rock
 elif player_move == "p":
@@ -14,7 +14,7 @@ elif player_move == "s":
     player_move = scissor
 else:
     raise SystemExit("Invalid Input. Try again...")
-
+#with random.randint() we create a computer_move and then we assign it to object
 computer_random_number = random.randint(1, 3)
 computer_move = ""
 if computer_random_number == 1:
